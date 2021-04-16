@@ -11,6 +11,9 @@
 # production
 /build
 
+#remove folder services
+/services
+
 # misc
 .DS_Store
 .env.local

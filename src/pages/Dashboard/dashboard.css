@@ -1,0 +1,153 @@
+.dashboard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.dashboard span {
+    margin: 2em 0;
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+.new{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+    background: #83bf02;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 7px;
+    transition: ease-out .2s;
+}
+
+.new:hover{
+    transform: scale(1.05);
+    filter: drop-shadow(2px 2px 4px #5fd204);
+}
+.link-called{
+    position: relative;
+    width: 150px;
+    left: calc(100% - 150px);
+}
+
+table{
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin: 10px 0 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+}
+
+table caption{
+    font-size: 1.5em;
+    margin: 0.5 0 .75em;
+}
+
+table tr{
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    padding: .35px;
+
+}
+
+table th, table td{
+    padding: .62em;
+    text-align: center;
+}
+table th{
+    font-size: .85em;
+    letter-spacing: .1em;
+    text-transform: capitalize;
+}
+
+table .action{
+    border: none;
+    padding: 5px;
+    margin-right: 2px;
+    display: inline-block;
+    border-radius: 7px;
+    align-items: center;
+}
+
+table td .action svg{
+    vertical-align: middle;
+}
+
+table td .badge{
+    padding: 3px;
+    color: #fff;
+    border-radius: 3px;
+}
+
+.btn-more{
+    margin: 1.5em 0;
+    padding: .5em 1em;
+    height: 35px;
+    border: 0;
+    border-radius: 7px;
+    background-color: #181c2e;
+    color: #fff;
+    font-size: 1.1em;
+}
+.loader {
+    border-top: 5px solid #181c1e;
+    width: 100%;
+    height: 2px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+  }
+
+  @keyframes spin {
+    0% { width: 0 }
+    100% { width: 100% }
+  }
+
+@media screen and (max-width: 645px) {
+    table{
+        border: 0;
+    }
+    table caption{
+        font-size: 1.3em;
+    }
+
+    table thead{
+        border: none;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+
+    table tr{
+        border-bottom: 3px solid #ddd;
+        display: block;
+        margin-bottom: 0.65em;
+    }
+
+    table td {
+        border-bottom: 3px solid #ddd;
+        display: block;
+        font-size: 0.8rem;
+        text-align: right;
+    }
+
+    table td::before{
+        content: attr(data-label);
+        display: flex;
+        font-weight: bold;
+        text-transform: uppercase;
+        float: left;
+    }
+    table td:last-child{
+        border: none;
+    }
+
+    
+}
