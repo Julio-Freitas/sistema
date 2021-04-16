@@ -1,11 +1,14 @@
 # sistema
-For to use this app, is necessary a project in firebase.
-After create the project in firebase, you should create a folder  and an file.
-name folder services
-name file firebaseConection
-look path: src/services/firebaseConection.js
-inside firebaseConection, configure your app. 
+<p>
+  For to use this app, is necessary a project in firebase.
+  After create the project in firebase, you should create a folder  and an file.
+  name folder services
+  name file firebaseConection
+  look path: src/services/firebaseConection.js
+  inside firebaseConection, configure your app.
+ </p>
 
+<pre>
 import firebase from 'firebase/app';
 import 'firebase/auth';
 import 'firebase/firestore';
@@ -26,5 +29,6 @@ if (!firebase.apps.length) {
 }
 
 export default firebase;
-run yarn start or npm start 
-all ready! =D
+</pre>
+<p>run yarn start or npm start</p>
+<p>all ready! =D</p>
